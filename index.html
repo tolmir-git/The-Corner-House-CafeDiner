@@ -10,6 +10,8 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="navbar-container"></div>
+
     <div class="menu-popup" id="menuPopup">
         <div class="menu-content">
             <button class="close-menu" onclick="closeMenu()">&times;</button>
@@ -19,19 +21,6 @@
             </div>
         </div>
     </div>
-    <header>
-        <nav class="container">
-            <div class="logo">The Corner House</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="https://www.just-eat.co.uk/restaurants-the-corner-house-southend-on-sea/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" target="_blank">Order Online</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="breakfast.html">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <section class="hero" id="home">
         <div class="container">
@@ -158,111 +147,13 @@
     </footer>
 
     <button id="floatingMenuButton" class="floating-menu-button">Full Menu</button>
-
     <script>
-        // Menu popup functionality
-        function openMenu() {
-            document.getElementById('menuPopup').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeMenu() {
-            document.getElementById('menuPopup').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close popup when clicking outside
-        document.getElementById('menuPopup').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeMenu();
-            }
-        });
-
-        // Close popup with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeMenu();
-            }
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
             });
-        });
-
-
-        // Add fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.2, // Trigger when 20% of the element is visible
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                    observer.unobserve(entry.target); // Stop observing once animated
-                }
-            });
-        }, observerOptions);
-
-        // Observe all sections for animation
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(50px)';
-            section.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
-            observer.observe(section);
-        });
-
-        // Floating button logic
-        const floatingButton = document.getElementById('floatingMenuButton');
-        const menuPreviewSection = document.getElementById('menu-preview');
-        const heroButton = document.querySelector('.hero .cta-button');
-
-        // Show/hide floating button based on scroll position
-        window.addEventListener('scroll', () => {
-            const rect = menuPreviewSection.getBoundingClientRect();
-            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                // The menu section is visible, hide the floating button
-                floatingButton.style.display = 'none';
-            } else {
-                // The menu section is not visible, show the floating button
-                floatingButton.style.display = 'block';
-            }
-        });
-        
-        // Add click event listener to the floating button
-        floatingButton.addEventListener('click', openMenu);
-        
-        // Update the hero button to call the openMenu function
-        heroButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            openMenu();
-        });
-
-        // Zoom functionality for the menu image
-        const menuImageFrame = document.getElementById('menuImageFrame');
-        const menuImage = menuImageFrame.querySelector('img');
-
-        menuImageFrame.addEventListener('click', () => {
-            menuImage.classList.toggle('zoomed');
-            if (menuImage.classList.contains('zoomed')) {
-                menuImageFrame.style.cursor = 'zoom-out';
-            } else {
-                menuImageFrame.style.cursor = 'zoom-in';
-            }
-        });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
