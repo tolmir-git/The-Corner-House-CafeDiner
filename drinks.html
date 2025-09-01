@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks Menu | The Corner House Cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #fefcf8;
+            color: #4a4a4a;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #8b7355 0%, #a0926b 100%);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            transition: width 0.3s ease-out;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .section-title {
+            color: #8b7355;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .card {
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .price {
+            color: #d4a574;
+        }
+        .bg-pattern {
+            background-image: linear-gradient(135deg, rgba(139, 115, 85, 0.1) 25%, transparent 25%, transparent 50%, rgba(139, 115, 85, 0.1) 50%, rgba(139, 115, 85, 0.1) 75%, transparent 75%, transparent);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">The Corner House</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="dessert.html ">Desserts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h1 class="section-title text-5xl font-bold mb-4">Our Drinks Menu</h1>
+            <p class="text-xl text-gray-600">Enjoy a wide range of hot drinks, cold beverages, and alcoholic options.</p>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <!-- Hot Drinks Section -->
+            <div class="bg-pattern rounded-3xl p-8 card shadow-md">
+                <h2 class="text-3xl font-bold section-title mb-6">Hot Drinks</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Tea</h3>
+                            <span class="price text-2xl font-bold">£1.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Pot or Mug of Tea. Pot for Two £3.75. Decaf Available.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Coffee</h3>
+                            <span class="price text-2xl font-bold">from £1.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Lavazza Italian Coffee: Espresso £1.95, Black £2.35, White £2.45.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Specialty Coffee</h3>
+                            <span class="price text-2xl font-bold">from £2.70</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Cappuccino £2.70, Latte £2.70, Hot Chocolate £2.85, Mocha £2.95. Large 50p extra. Flavoured Syrups & Marshmallows 50p.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cold Drinks Section -->
+            <div class="bg-pattern rounded-3xl p-8 card shadow-md">
+                <h2 class="text-3xl font-bold section-title mb-6">Cold Drinks</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Milkshakes</h3>
+                            <span class="price text-2xl font-bold">from £3.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Strawberry Milkshake £3.95, Vanilla Milkshake £3.95, Banana Milkshake £4.50. All milkshakes are served with whipped cream.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Soft Drinks</h3>
+                            <span class="price text-2xl font-bold">from £1.25</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Cans £1.50, Ribena £1.50, Soft Drink Bottles (500 ml) £2.50, Fruit Juice Bottle (500 ml) £1.95, Bottled Water (500 ml) £1.25, Energy Drinks £1.95.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Alcoholic Drinks Section -->
+            <div class="bg-white rounded-3xl p-8 card shadow-md col-span-1 md:col-span-2">
+                <h2 class="text-3xl font-bold section-title mb-6">Beer & Wine</h2>
+                <p class="text-gray-500 mb-4 italic text-sm">Available from 11 am only. Served with a meal.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex justify-between items-center border-b pb-2">
+                        <h3 class="font-semibold">Beer (330 ml)</h3>
+                        <span class="price">£3.50</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold">Wine (187 ml)</h3>
+                        <span class="price">£3.50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <div class="container mx-auto">
+            <p>&copy; 2024 The Corner House Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

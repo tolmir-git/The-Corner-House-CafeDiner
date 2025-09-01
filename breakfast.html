@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Menu | The Corner House Cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #fefcf8;
+            color: #4a4a4a;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #8b7355 0%, #a0926b 100%);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            transition: width 0.3s ease-out;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .section-title {
+            color: #8b7355;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .card {
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .price {
+            color: #d4a574;
+        }
+        .bg-pattern {
+            background-image: linear-gradient(135deg, rgba(139, 115, 85, 0.1) 25%, transparent 25%, transparent 50%, rgba(139, 115, 85, 0.1) 50%, rgba(139, 115, 85, 0.1) 75%, transparent 75%, transparent);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">The Corner House</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="dessert.html ">Desserts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h1 class="section-title text-5xl font-bold mb-4">Our Breakfast Menu</h1>
+            <p class="text-xl text-gray-600">Start your day the right way with our hearty and delicious breakfast options, served all day.</p>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Full Breakfasts Section -->
+            <div class="bg-pattern rounded-3xl p-8 card shadow-md">
+                <h2 class="text-3xl font-bold section-title mb-6">Full English & Veggie</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Full English</h3>
+                            <span class="price text-2xl font-bold">£6.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">2 Sausages, 2 Bacon, 2 Fried Eggs, Baked Beans & Toast.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Small English</h3>
+                            <span class="price text-2xl font-bold">£4.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Sausage, Bacon, Fried Egg, Baked Beans & Toast.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Vegetarian</h3>
+                            <span class="price text-2xl font-bold">£6.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">2 Hash Browns, 2 Fried Eggs, Mushrooms, Grilled Tomatoes, Baked Beans & Toast.<br><span>Add 2 Veggie Sausages for £1.00.</span></p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Brunch</h3>
+                            <span class="price text-2xl font-bold">£6.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Sausage, Egg, Bacon, Mushrooms, Baked Beans, Chips, Bread & Butter.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Corner House Special</h3>
+                            <span class="price text-2xl font-bold">£7.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">2 Sausages, 2 Bacon, 2 Fried Eggs, 2 Hash Browns, Baked Beans & Toast.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakfast Sandwiches & Sides Section -->
+            <div class="bg-pattern rounded-3xl p-8 card shadow-md">
+                <h2 class="text-3xl font-bold section-title mb-6">Sandwiches & Baguettes</h2>
+                <p class="text-gray-500 mb-4 italic text-sm">Veggie sausages available for all options.</p>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Bacon</h3>
+                            <span class="price text-2xl font-bold">£3.95 (S) / £5.95 (B) / £3.50 (R)</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">S = Sandwich, B = Baguette, R = Roll</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Double Bacon</h3>
+                            <span class="price text-2xl font-bold">£5.50 (S) / £7.50 (B) / £4.95 (R)</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Sausage</h3>
+                            <span class="price text-2xl font-bold">£3.95 (S) / £5.95 (B) / £3.50 (R)</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Sausage, Egg & Bacon</h3>
+                            <span class="price text-2xl font-bold">£5.95 (S) / £7.50 (B) / £4.95 (R)</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-3xl font-bold section-title mt-8 mb-6">Extras & Sides</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Homemade Bubble & Squeak</h3>
+                            <span class="price text-2xl font-bold">£1.50</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Hash Brown</h3>
+                            <span class="price text-2xl font-bold">80p</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Chips</h3>
+                            <span class="price text-2xl font-bold">£2.75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pancakes, Yorkshire & Muffins Section -->
+            <div class="bg-pattern rounded-3xl p-8 card shadow-md">
+                <h2 class="text-3xl font-bold section-title mb-6">Pancakes & Yorkshire</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">American Pancakes</h3>
+                            <span class="price text-2xl font-bold">£6.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">4 Pancakes with 2 Butter Portions, 4 Streaky Bacon & Maple Syrup.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Breakfast Yorkshire</h3>
+                            <span class="price text-2xl font-bold">£8.50</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">2 Bacon, Pork Sausage, Mushrooms, Grilled Tomato, Beans & Fried Egg On Top.</p>
+                    </div>
+                </div>
+                <h2 class="text-3xl font-bold section-title mt-8 mb-6">Muffins & On Toast</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">Sausage Patty Muffin</h3>
+                            <span class="price text-2xl font-bold">£2.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Served with Burger Cheese.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-2xl font-semibold">On Toast Options</h3>
+                            <span class="price text-2xl font-bold">£2.95</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Single Fried Egg, Scrambled Eggs, Grilled Mushrooms, Grilled Tomatoes, or Grilled Cheese on Toast.</p>
+                        <p class="text-sm italic text-gray-500 mt-2">Double any of the above for £4.50.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <div class="container mx-auto">
+            <p>&copy; 2024 The Corner House Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
