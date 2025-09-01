@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+main {
+    flex-grow: 1;
+}
 
 body {
     font-family: 'Lato', sans-serif;
@@ -11,6 +14,9 @@ body {
     color: #4a4a4a;
     background-color: #fefcf8;
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3 {
