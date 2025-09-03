@@ -59,17 +59,22 @@ function initializeIndexScripts() {
     const floatingButton = document.getElementById('floatingMenuButton');
 
     function openMenu() {
-        if(menuPopup) {
-            menuPopup.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
+        const popup = document.getElementById('menuPopup');
+        popup.style.display = 'flex';
+        // Force reflow to enable transition
+        popup.offsetHeight;
+        popup.classList.add('active');
     }
 
     function closeMenu() {
-        if(menuPopup) {
-            menuPopup.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
+        const popup = document.getElementById('menuPopup');
+        popup.classList.remove('active');
+        // Wait for transition to finish before hiding
+        setTimeout(() => {
+            if (!popup.classList.contains('active')) {
+                popup.style.display = 'none';
+            }
+        }, 400); // Match the transition duration
     }
     
     if(menuPopup) {
