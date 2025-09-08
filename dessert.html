@@ -20,6 +20,16 @@
         <div class="text-center mb-12">
             <h1 class="section-title text-4xl sm:text-5xl font-bold mb-4">Our Dessert Menu</h1>
             <p class="text-lg sm:text-xl text-gray-600">Indulge your sweet tooth with our delicious desserts and homemade cakes.</p>
+            <div class="flex justify-center gap-4 mt-4">
+                <span class="inline-flex items-center gap-1">
+                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
+                    <span class="text-sm text-gray-600">Vegetarian</span>
+                </span>
+                <span class="inline-flex items-center gap-1">
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">N</span>
+                    <span class="text-sm text-gray-600">Contains Nuts</span>
+                </span>
+            </div>
         </div>
 
         <!-- Menu Grid -->
@@ -30,21 +40,31 @@
                 <div class="space-y-6">
                     <div>
                         <div class="flex justify-between items-center mb-1">
-                            <h3 class="text-xl sm:text-2xl font-semibold">Chocolate Pancakes</h3>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-xl sm:text-2xl font-semibold">Chocolate Pancakes</h3>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
+                                <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">N</span>
+                            </div>
                             <span class="price text-xl sm:text-2xl font-bold">£5.95</span>
                         </div>
                         <p class="text-gray-600 text-sm">3 Pancakes with Chocolate Flake, Chocolate Sauce & Vanilla Ice Cream.</p>
                     </div>
                     <div>
                         <div class="flex justify-between items-center mb-1">
-                            <h3 class="text-xl sm:text-2xl font-semibold">Banana Pancakes</h3>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-xl sm:text-2xl font-semibold">Banana Pancakes</h3>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
+                            </div>
                             <span class="price text-xl sm:text-2xl font-bold">£5.95</span>
                         </div>
                         <p class="text-gray-600 text-sm">3 Pancakes with Fresh Banana, Chocolate Sauce & Ice Cream.</p>
                     </div>
                     <div>
                         <div class="flex justify-between items-center mb-1">
-                            <h3 class="text-xl sm:text-2xl font-semibold">Pancakes with Syrup</h3>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-xl sm:text-2xl font-semibold">Pancakes with Syrup</h3>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
+                            </div>
                             <span class="price text-xl sm:text-2xl font-bold">£4.95</span>
                         </div>
                         <p class="text-gray-600 text-sm">3 Pancakes with Vanilla Ice Cream & Maple Syrup.</p>
@@ -72,7 +92,11 @@
                     </div>
                     <div>
                         <div class="flex justify-between items-center mb-1">
-                            <h3 class="text-xl sm:text-2xl font-semibold">Homemade Cakes</h3>
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-xl sm:text-2xl font-semibold">Homemade Cakes</h3>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
+                                <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">N</span>
+                            </div>
                             <span class="price text-xl sm:text-2xl font-bold">from £2.95</span>
                         </div>
                         <p class="text-gray-600 text-sm">Homemade Cake of the Day £2.95. Homemade Cake & Custard £3.95. Also available: Large Chocolate Muffin £2.95, or with Custard £3.95.</p>
@@ -103,11 +127,38 @@
         </div>
     </main>
 
+    <!-- Floating Button -->
+    <a href="https://just-eat.co.uk/restaurants-the-corner-house-southend-on-sea/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" target="_blank" id="floatingOrderBtn" class="fixed right-4 top-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-500 hover:scale-105 hover:shadow-xl flex items-center gap-2 font-semibold z-50">
+        <span>Order Now</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+    </a>
+
     <!-- Footer will be loaded here -->
     <div id="footer-container"></div>
     
     <!-- Load the main script file -->
     <script src="script.js"></script>
+    <script>
+        // Show floating order button after 10 seconds
+        window.addEventListener('load', function() {
+            console.log('Page loaded, waiting 10 seconds...');
+            const floatingBtn = document.getElementById('floatingOrderBtn');
+            if (floatingBtn) {
+                console.log('Button found, starting timer...');
+                setTimeout(() => {
+                    console.log('Timer finished, showing button...');
+                    floatingBtn.classList.remove('invisible', 'opacity-0');
+                    floatingBtn.classList.add('opacity-100');
+                    floatingBtn.style.visibility = 'visible';
+                    floatingBtn.style.transform = 'translate(0, -50%)';
+                }, 10000);
+            } else {
+                console.log('Button not found!');
+            }
+        });
+    </script>
 </body>
 </html>
 
