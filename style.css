@@ -456,6 +456,13 @@ nav {
     font-size: 1.5rem;
     margin-top: 1.5rem;
 }
+.price_extras {
+    color: #d4a574;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
 
 /* Gallery - Improved Section */
 .gallery {
