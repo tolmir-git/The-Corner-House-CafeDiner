@@ -8,14 +8,14 @@ function DessertPage() {
         <div className="text-center mb-12">
             <h1 className="section-title text-4xl sm:text-5xl font-bold mb-4">Our Dessert Menu</h1>
             <p className="text-lg sm:text-xl text-gray-600">Indulge your sweet tooth with our delicious desserts and homemade cakes.</p>
-             <div class="flex justify-center gap-4 mt-4">
-                <span class="inline-flex items-center gap-1">
-                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
-                    <span class="text-sm text-gray-600">Vegetarian</span>
+             <div className="flex justify-center gap-4 mt-4">
+                <span className="inline-flex items-center gap-1">
+                    <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
+                    <span className="text-sm text-gray-600">Vegetarian</span>
                 </span>
-                <span class="inline-flex items-center gap-1">
-                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">N</span>
-                    <span class="text-sm text-gray-600">Contains Nuts</span>
+                <span className="inline-flex items-center gap-1">
+                    <span className="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">N</span>
+                    <span className="text-sm text-gray-600">Contains Nuts</span>
                 </span>
             </div>
         </div>
