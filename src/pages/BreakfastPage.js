@@ -8,6 +8,16 @@ function BreakfastPage() {
         <div className="text-center mb-12">
             <h1 className="section-title text-4xl sm:text-5xl font-bold mb-4">Our Breakfast Menu</h1>
             <p className="text-lg sm:text-xl text-gray-600">Start your day the right way with our hearty and delicious breakfast options, served all day.</p>
+            <div class="flex justify-center gap-4 mt-4">
+                <span class="inline-flex items-center gap-1">
+                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
+                    <span class="text-sm text-gray-600">Vegetarian</span>
+                </span>
+                <span class="inline-flex items-center gap-1">
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">N</span>
+                    <span class="text-sm text-gray-600">Contains Nuts</span>
+                </span>
+            </div>
         </div>
          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 mb-12">
             <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md min-h-[650px] w-full xl:max-w-md ">
