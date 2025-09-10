@@ -679,6 +679,26 @@ footer {
     visibility: hidden;
     background-color: #f59e0b;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    #floatingOrderBtn {
+        top: 1rem;
+        transform: none;
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+    #floatingOrderBtn svg {
+        width: 1rem;
+        height: 1rem;
+    }
+    #floatingOrderBtn.show {
+        transform: none !important;
+    }
+    #floatingOrderBtn:hover {
+        transform: none !important;
+    }
+}
 @keyframes shine {
     from {
         background-position: 0% center;

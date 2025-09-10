@@ -16,7 +16,12 @@ function showOrderButton() {
     setTimeout(() => {
         btn.style.visibility = 'visible';
         btn.style.opacity = '1';
-        btn.style.transform = 'translate(0, -50%)';
+        // Check if mobile
+        if (window.innerWidth <= 768) {
+            btn.style.transform = 'none';
+        } else {
+            btn.style.transform = 'translate(0, -50%)';
+        }
     }, 10000); // 10 seconds
 
     // Optional: Add hover effect
