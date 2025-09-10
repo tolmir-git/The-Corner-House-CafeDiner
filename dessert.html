@@ -9,6 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <style>
+        @keyframes shine {
+            from {
+                background-position: 0% center;
+            }
+            to {
+                background-position: 200% center;
+            }
+        }
+        #floatingOrderBtn span {
+            color: white;
+            background: none;
+        }
+        #floatingOrderBtn:hover span {
+            background: linear-gradient(90deg, white 0%, #ffd700 25%, white 50%, #ffd700 75%, white 100%);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            animation: shine 2s linear infinite;
+        }
+    </style>
 </head>
 <body>
 
@@ -128,7 +151,7 @@
     </main>
 
     <!-- Floating Button -->
-    <a href="https://just-eat.co.uk/restaurants-the-corner-house-southend-on-sea/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" target="_blank" id="floatingOrderBtn" class="fixed right-4 top-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-500 hover:scale-105 hover:shadow-xl flex items-center gap-2 font-semibold z-50">
+    <a href="https://just-eat.co.uk/restaurants-the-corner-house-southend-on-sea/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" target="_blank" id="floatingOrderBtn" class="fixed right-4 top-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-r hover:from-amber-600 hover:to-amber-700 hover:-translate-x-1 flex items-center gap-2 font-bold z-50" style="color: white !important; background-color: #f59e0b !important;">
         <span>Order Now</span>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -140,25 +163,7 @@
     
     <!-- Load the main script file -->
     <script src="script.js"></script>
-    <script>
-        // Show floating order button after 10 seconds
-        window.addEventListener('load', function() {
-            console.log('Page loaded, waiting 10 seconds...');
-            const floatingBtn = document.getElementById('floatingOrderBtn');
-            if (floatingBtn) {
-                console.log('Button found, starting timer...');
-                setTimeout(() => {
-                    console.log('Timer finished, showing button...');
-                    floatingBtn.classList.remove('invisible', 'opacity-0');
-                    floatingBtn.classList.add('opacity-100');
-                    floatingBtn.style.visibility = 'visible';
-                    floatingBtn.style.transform = 'translate(0, -50%)';
-                }, 10000);
-            } else {
-                console.log('Button not found!');
-            }
-        });
-    </script>
+    <script src="button_script.js"></script>
 </body>
 </html>
 
