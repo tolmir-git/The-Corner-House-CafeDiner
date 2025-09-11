@@ -20,13 +20,14 @@ const styles = {
       font-size: 0.8em;
       margin-left: 4px;
     }
+      
 
     @media (min-width: 769px) {
       .dropdown-content {
         display: none;
         background: #85725B;
         position: absolute;
-        border-radius: 10px;
+        border-radius: 20px;
         overflow: hidden;
       }
       
@@ -39,6 +40,9 @@ const styles = {
         text-align: center;
       }
     }
+      .dropdown .dropbtn:hover::before {
+    width: 100%; /* Полная ширина при ховере */
+}
     
     @media (max-width: 768px) {
       .dropdown.mobile {
@@ -88,7 +92,7 @@ const styles = {
         background: #85725B;
         display: block;
         max-height: none;
-        border-radius: 0 0 10px 10px;
+
       }
 
       .dropdown.mobile.open .dropdown-content a {
