@@ -1,12 +1,76 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
+const dropdownStyles = `
+  .dropbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  @media (min-width: 769px) {
+    .dropdown:hover .dropdown-content {
+      display: block;
+      max-height: 300px;
+      transition: max-height 0.3s ease-in;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dropdown.mobile {
+      background: none;
+    }
+    
+    .dropdown.mobile .dropbtn {
+      background: none;
+    }
+    
+    .dropdown.mobile.open {
+      background: #8b735;
+      
+    }
+    
+    .dropdown.mobile .dropdown-content {
+      display: block;
+      transition: max-height 0.3s ease-out;
+      overflow: hidden;
+      background: #8b735; 
+    }
+    
+    .dropdown.mobile:not(.open) .dropdown-content {
+      background: none;
+      
+    }
+    
+    .dropdown.mobile:hover .dropdown-content {
+      /* Disable hover effect on mobile */
+      max-height: 0;
+    }
+  }
+`;
+
 function Header() {
+  const dropdownRef = useRef(null);
   const [isNavActive, setIsNavActive] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      if (!mobile) {
+        setDropdownOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     // Close the mobile menu when the route changes
@@ -18,10 +82,10 @@ function Header() {
     setIsNavActive(!isNavActive);
   };
 
-  // Функция для клика по дропдауну ТОЛЬКО на мобильных
+  // Function to handle dropdown on mobile and desktop differently
   const toggleDropdown = () => {
-    if (window.innerWidth <= 768) {
-        setDropdownOpen(!isDropdownOpen);
+    if (isMobile) {
+      setDropdownOpen(!isDropdownOpen);
     }
   };
 
@@ -53,6 +117,7 @@ function Header() {
 
   return (
     <header>
+      <style>{dropdownStyles}</style>
       <nav className="container">
         <div className="logo">The Corner House</div>
         <div
@@ -67,17 +132,16 @@ function Header() {
         <ul className={`nav-links ${isNavActive ? 'active' : ''}`} id="nav-links">
           <li><Link to="/" onClick={handleHomeClick}>Home</Link></li>
           
-          <li className={`dropdown ${isDropdownOpen ? 'open' : ''}`}>
-            {/* onClick срабатывает только на мобильных, на десктопе - обычное поведение */}
+          <li className={`dropdown ${isDropdownOpen ? 'open' : ''} ${isMobile ? 'mobile' : ''}`}>
             <span className="dropbtn" onClick={toggleDropdown}>Menu</span>
             <div
               className="dropdown-content"
               ref={dropdownRef}
-              style={ window.innerWidth <= 768 ? { maxHeight: isDropdownOpen ? `${dropdownRef.current.scrollHeight}px` : '0' } : {} }
+              style={isMobile ? { maxHeight: isDropdownOpen ? `${dropdownRef.current.scrollHeight}px` : '0' } : {}}
             >
-              <Link to="/breakfast">Breakfast</Link>
-              <Link to="/drinks">Drinks</Link>
-              <Link to="/dessert">Desserts</Link>
+              <Link to="/breakfast" onClick={() => setDropdownOpen(false)}>Breakfast</Link>
+              <Link to="/drinks" onClick={() => setDropdownOpen(false)}>Drinks</Link>
+              <Link to="/dessert" onClick={() => setDropdownOpen(false)}>Desserts</Link>
             </div>
           </li>
           {/* ------------------------- */}

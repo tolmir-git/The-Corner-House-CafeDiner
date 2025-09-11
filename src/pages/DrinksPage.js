@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AnimatedPage from '../components/Menu_Animation';
-
+import { showOrderButton } from '../components/order_button';
 function DrinksPage() {
+  useEffect(() => {
+    showOrderButton();
+  }, []);
 
   return (
     <AnimatedPage>
@@ -11,9 +14,8 @@ function DrinksPage() {
             <p className="text-lg sm:text-xl text-gray-600">Enjoy a wide range of hot drinks, cold beverages, and alcoholic options.</p>
         </div>
 
-        {/* Menu Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
-            {/* Hot Drinks Section */}
+
             <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">Hot Drinks</h2>
                 <div className="space-y-6">
@@ -54,7 +56,7 @@ function DrinksPage() {
                 </div>
             </div>
 
-            {/* Cold Drinks Section */}
+
             <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">Cold Drinks</h2>
                 <div className="space-y-6">
@@ -74,8 +76,7 @@ function DrinksPage() {
                     </div>
                 </div>
             </div>
-            
-            {/*  Alcoholic Drinks Section  */}
+
             <div className="bg-white rounded-3xl p-6 sm:p-8 card shadow-md col-span-1 md:col-span-2">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">Beer & Wine</h2>
                 <p className="text-gray-500 mb-4 italic text-sm">Available from 11 am only. Served with a meal.</p>
@@ -92,6 +93,20 @@ function DrinksPage() {
             </div>
         </div>
     </main>
+    <a href="https://just-eat.co.uk/restaurants-the-corner-house-southend-on-sea/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        id="floatingOrderBtn" 
+        className="fixed right-4 top-1/2 -translate-y-1/2 text-white px-6 py-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 flex items-center gap-2 font-bold z-50 bg-amber-500 hover:bg-amber-600"
+        style={{ 
+            visibility: 'hidden',
+            transform: 'translate(100%, -50%)'
+        }}>
+        <span>Order Now</span>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+        </svg>
+    </a>
     </AnimatedPage>
   );
 }
