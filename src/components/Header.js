@@ -1,55 +1,109 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
-const dropdownStyles = `
-  .dropbtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-  }
+const styles = {
+  dropdownStyles: `
+    .dropbtn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0;
+      background: none;
+      color: inherit;
+      border: none;
+      font: inherit;
+      cursor: pointer;
+    }
 
-  @media (min-width: 769px) {
-    .dropdown:hover .dropdown-content {
-      display: block;
-      max-height: 300px;
-      transition: max-height 0.3s ease-in;
+    .dropbtn::after {
+      content: "▼";
+      font-size: 0.8em;
+      margin-left: 4px;
     }
-  }
-  
-  @media (max-width: 768px) {
-    .dropdown.mobile {
-      background: none;
-    }
-    
-    .dropdown.mobile .dropbtn {
-      background: none;
-    }
-    
-    .dropdown.mobile.open {
-      background: #8b735;
+
+    @media (min-width: 769px) {
+      .dropdown-content {
+        display: none;
+        background: #85725B;
+        position: absolute;
+        border-radius: 10px;
+        overflow: hidden;
+      }
       
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        padding: 10px 20px;
+        text-align: center;
+      }
     }
     
-    .dropdown.mobile .dropdown-content {
-      display: block;
-      transition: max-height 0.3s ease-out;
-      overflow: hidden;
-      background: #8b735; 
-    }
-    
-    .dropdown.mobile:not(.open) .dropdown-content {
-      background: none;
+    @media (max-width: 768px) {
+      .dropdown.mobile {
+        background: none;
+      }
       
+      .dropdown.mobile .dropbtn {
+        background: none;
+        text-align: left;
+        display: inline-flex;
+        width: auto;
+        padding: 0;
+      }
+      
+      .dropdown.mobile.open {
+        background: #8b7355;
+        width: 100%;
+        border-radius: 10px;
+      }
+      
+      .dropdown.mobile.open .dropbtn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .dropdown.mobile .dropdown-content {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        pointer-events: none;
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+      }
+      
+      .dropdown.mobile.open .dropdown-content {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        pointer-events: auto;
+        background: #85725B;
+        display: block;
+        max-height: none;
+        border-radius: 0 0 10px 10px;
+      }
+
+      .dropdown.mobile.open .dropdown-content a {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        transition: background-color 0.3s;
+      }
+
+      .dropdown.mobile.open .dropdown-content a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
     }
-    
-    .dropdown.mobile:hover .dropdown-content {
-      /* Disable hover effect on mobile */
-      max-height: 0;
-    }
-  }
-`;
+  `
+};
 
 function Header() {
   const dropdownRef = useRef(null);
@@ -117,7 +171,7 @@ function Header() {
 
   return (
     <header>
-      <style>{dropdownStyles}</style>
+      <style>{styles.dropdownStyles}</style>
       <nav className="container">
         <div className="logo">The Corner House</div>
         <div
