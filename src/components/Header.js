@@ -15,12 +15,24 @@ const styles = {
       cursor: pointer;
     }
 
+    /* Убираем старый стиль со стрелкой */
     .dropbtn::after {
-      content: "▼";
-      font-size: 0.8em;
-      margin-left: 4px;
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid white;
+      transition: transform 0.3s ease-out;
+      margin-left: 8px;
     }
-      
+
+    /* Поворот стрелки для dropbtn */
+    .dropdown:hover .dropbtn::after,
+    .dropdown.open .dropbtn::after {
+      transform: rotate(180deg);
+    }
 
     @media (min-width: 769px) {
       .dropdown-content {
@@ -40,10 +52,7 @@ const styles = {
         text-align: center;
       }
     }
-      .dropdown .dropbtn:hover::before {
-    width: 100%; /* Полная ширина при ховере */
-}
-    
+
     @media (max-width: 768px) {
       .dropdown.mobile {
         background: none;
@@ -92,7 +101,6 @@ const styles = {
         background: #85725B;
         display: block;
         max-height: none;
-
       }
 
       .dropdown.mobile.open .dropdown-content a {
