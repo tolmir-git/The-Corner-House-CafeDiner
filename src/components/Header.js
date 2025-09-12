@@ -33,6 +33,21 @@ const styles = {
     .dropdown.open .dropbtn::after {
       transform: rotate(180deg);
     }
+      .dropbtn::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #f4e6d1;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .dropdown:hover .dropbtn::before {
+      width: 80%;
+    }
 
     @media (min-width: 769px) {
       .dropdown-content {
