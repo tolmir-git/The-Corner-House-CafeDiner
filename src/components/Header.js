@@ -33,7 +33,9 @@ const styles = {
     .dropdown.open .dropbtn::after {
       transform: rotate(180deg);
     }
-      .dropbtn::before {
+
+    /* Добавляем подчеркивание для dropbtn как у других ссылок */
+    .dropbtn::before {
       content: '';
       position: absolute;
       bottom: 0;
@@ -47,6 +49,12 @@ const styles = {
 
     .dropdown:hover .dropbtn::before {
       width: 80%;
+    }
+
+    .dropdown:hover .dropbtn {
+      color: #f4e6d1;
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
     }
 
     @media (min-width: 769px) {
@@ -79,6 +87,16 @@ const styles = {
         display: inline-flex;
         width: auto;
         padding: 0;
+      }
+
+      /* Стрелка в мобильной версии - вниз по умолчанию */
+      .dropdown.mobile .dropbtn::after {
+        transform: rotate(0deg);
+      }
+
+      /* Стрелка в мобильной версии - вверх при открытии */
+      .dropdown.mobile.open .dropbtn::after {
+        transform: rotate(180deg);
       }
       
       .dropdown.mobile.open {
