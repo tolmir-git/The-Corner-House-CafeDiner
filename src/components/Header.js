@@ -227,6 +227,7 @@ function Header() {
           <div></div>
           <div></div>
           <div></div>
+
         </div>
         <ul className={`nav-links ${isNavActive ? 'active' : ''}`} id="nav-links">
           <li><Link to="/" onClick={handleHomeClick}>Home</Link></li>
@@ -239,6 +240,9 @@ function Header() {
               style={isMobile ? { maxHeight: isDropdownOpen ? `${dropdownRef.current.scrollHeight}px` : '0' } : {}}
             >
               <Link to="/breakfast" onClick={() => setDropdownOpen(false)}>Breakfast</Link>
+              <Link to="/burgers" onClick={() => setDropdownOpen(false)}>Burgers</Link>
+              <Link to="/bakery" onClick={() => setDropdownOpen(false)}>Hot Bakery</Link>
+              <Link to="/mains" onClick={() => setDropdownOpen(false)}>Mains</Link>
               <Link to="/drinks" onClick={() => setDropdownOpen(false)}>Drinks</Link>
               <Link to="/dessert" onClick={() => setDropdownOpen(false)}>Desserts</Link>
             </div>
