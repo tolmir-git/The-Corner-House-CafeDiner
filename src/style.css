@@ -167,6 +167,22 @@ nav {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
 }
+.dropdown .dropbtn::before{
+     content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #f4e6d1;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+
+}
+.dropdown .dropbtn:hover::before {
+    width: 80%;
+
+}
 .dropdown .arrow {
     width: 30px; /* Увеличиваем область для клика */
     height: 100%;
@@ -423,17 +439,16 @@ nav {
 }
 
 .menu-image-frame {
-    width:60%;
-    margin-left:auto;
-    margin-right:auto;
+    flex: 1; 
+    max-width: 48%; 
     border: 3px solid #d4a574;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /*привет пидорас*/
     position: relative;
     overflow: hidden;
-    cursor: zoom-in; /* Indicate that it's clickable */
+    cursor: zoom-in;
 }
 
 .menu-image-frame img {
@@ -451,6 +466,12 @@ nav {
 .menu-image-frame img.zoomed {
     transform: scale(2); /* Zoom effect */
     cursor: zoom-out;
+}
+.menu-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem; /* Adjust the space between menus */
 }
 
 .menu-popup h2 {
@@ -777,17 +798,7 @@ footer {
     background-position: 100px 100px, 200% 100%;
 }
 
-.dropbtn {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 0;
-      background: none;
-      color: inherit;
-      border: none;
-      font: inherit;
-      cursor: pointer;
-    }
+/*  */
 .dropbtn::after {
       content: "▼";
       font-size: 0.8em;
@@ -797,17 +808,7 @@ footer {
       font-size: 0.8em;
       margin-left: 4px;
     }
-    .dropbtn {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 0;
-      background: none;
-      color: inherit;
-      border: none;
-      font: inherit;
-      cursor: pointer;
-    }
+    /*  */
 
     .dropbtn::after {
       content: "▼";
@@ -1129,3 +1130,14 @@ footer {
     .gallery-grid {
         columns: 1;
     }}
+
+    @media (max-width: 768px) {
+    .menu-images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-image-frame {
+        max-width: 90%; /* Allows images to be wider on mobile */
+    }
+}

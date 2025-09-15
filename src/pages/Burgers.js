@@ -74,8 +74,9 @@ function BurgersPage() {
 
             <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md min-h-[650px] w-full xl:max-w-md">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">Burgers</h2>
+                <br></br>
                 <p className="text-gray-500 mb-4 italic text-sm"><b>40z BATTERED CHICKEN BURGER</b> Served In A Toasted Brioche Bun With Lettuce, Tomato & Mayo.</p>
-                <p className="text-gray-600 text-sm"><b className="price text-lg sm:text-xl font-bold text-right">*</b>S = Sandwich, B = Baguette, R = Roll</p>
+                
                 <div className="space-y-6">
                     <div>
                         <div className="flex justify-between items-center mb-1">
