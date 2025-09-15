@@ -33,6 +33,7 @@ function BakeryPage() {
                         <div className="flex justify-between items-center mb-1">
                             <div className="flex items-center gap-2">
                                 <h3 className="text-xl sm:text-2xl font-semibold">Cheese </h3>
+                                <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                                  {/* <span className="bg-gradient-to-r from-amber-100 to-amber-200 text-amber-800 text-xs px-3 py-1 rounded-full font-semibold shadow-sm border border-amber-200">⭐ Popular</span>  */}
                             </div>
                             <span className="price text-xl sm:text-2xl font-bold">£5.50</span>
@@ -41,6 +42,7 @@ function BakeryPage() {
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Cheese & Tomato Or Onion</h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-xl sm:text-2xl font-bold">£5.50</span>
                         </div>
                     </div>
@@ -94,6 +96,7 @@ function BakeryPage() {
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Cheese</h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-lg sm:text-xl font-bold text-right">£6.95</span>
                         </div>
                         
@@ -119,12 +122,14 @@ function BakeryPage() {
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Cheese & Beans</h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-lg sm:text-xl font-bold text-right">£7.50</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Cheese & Coleslaw</h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-lg sm:text-xl font-bold text-right">£7.50</span>
                         </div>
                     </div>
@@ -159,9 +164,11 @@ function BakeryPage() {
             <div className="bg-white rounded-3xl p-6 sm:p-8 card shadow-md col-span-1 md:col-span-2">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">FRESH SALADS</h2>
                 <p className="text-gray-500 mb-4 italic text-sm">Lettuce, Tomato, Cucumber, Onion, Sweetcorn, Boiled Egg, Homemade Coleslaw, Grated Cheese, Beetroot & Mixed Peppers. </p>
+               
                 <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
                     <div className="flex justify-between items-center border-b sm:border-b-0 sm:border-r sm:pr-4 pb-2 sm:pb-0 border-gray-200">
                         <h3 className="font-Monferrat font-bold text-grey-600">Cheese </h3>
+                        <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                         <span className="price_extras text-x1">£8.95</span>
                     </div>
                     <div className="flex justify-between items-center sm:pl-4">
@@ -190,6 +197,7 @@ function BakeryPage() {
                     </div>
                     <div className="flex justify-between items-center border-b sm:border-b-0 sm:border-r sm:pr-4 pb-2 sm:pb-0 border-gray-200">
                         <h3 className="font-Monferrat font-bold text-gray-600 ">Small Salad Bowl </h3>
+                        <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                         <span className="price_extras text-sm">£2.00</span>
                     </div>
                     <div className="flex justify-between items-center border-b sm:border-b-0 sm:border-r sm:pr-4 pb-2 sm:pb-0 border-gray-200">
@@ -255,6 +263,7 @@ function BakeryPage() {
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Cheese</h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-lg sm:text-xl font-bold text-right">£6.75</span>
                         </div>
                         
@@ -293,6 +302,7 @@ function BakeryPage() {
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Cheese </h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-xl sm:text-2xl font-bold">£3.75</span>
                         </div>
                     </div>

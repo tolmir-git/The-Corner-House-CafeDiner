@@ -113,30 +113,35 @@ function BurgersPage() {
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Quarter-Pound Burger </h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-xl sm:text-2xl font-bold">£5.50 </span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">With Melted Cheddar</h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-xl sm:text-2xl font-bold">£5.95</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Extra Homemade Veggie Patty</h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-xl sm:text-2xl font-bold">£2.50 </span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">3 Onion Rings In Burger</h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-xl sm:text-2xl font-bold">£1.00</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Hash Brown </h3>
+                            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             <span className="price text-xl sm:text-2xl font-bold">80p</span>
                         </div>
                     </div>
@@ -161,6 +166,7 @@ function BurgersPage() {
                     </div>
                     <div className="flex justify-between items-center sm:pl-4">
                         <h3 className="font-Monferrat font-bold text-gray-600 ">Onion Rings (8)</h3>
+                        <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                         <span className="price_extras text-sm">£2.50</span>
                     </div>
                     <div className="flex justify-between items-center border-b sm:border-b-0 sm:border-r sm:pr-4 pb-2 sm:pb-0 border-gray-200">
@@ -169,6 +175,7 @@ function BurgersPage() {
                     </div>
                     <div className="flex justify-between items-center sm:pl-4">
                         <h3 className="font-Monferrat font-bold text-gray-600 ">Crispy Onions Or Fried Onions</h3>
+                        <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                         <span className="price_extras text-sm">£1.00</span>
                     </div>
                     <div className="flex justify-between items-center border-b sm:border-b-0 sm:border-r sm:pr-4 pb-2 sm:pb-0 border-gray-200">
