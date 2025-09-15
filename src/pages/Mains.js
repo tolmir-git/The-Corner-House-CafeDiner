@@ -25,254 +25,238 @@ function MainsPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
-            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md min-h-[650px] w-full xl:max-w-md">
+            {/* HOMEMADE PULLED PORK CARD */}
+            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">HOMEMADE PULLED PORK</h2>
                 <div className="space-y-6">
-                    <div className="relative group">
+                    <div>
                         <div className="flex justify-between items-center mb-1">
-                            <div className="flex items-center gap-2">
-                                <h3 className="text-xl sm:text-2xl font-semibold">Pulled Pork In A Toasted Brioche Bun With Salad & Gherkin </h3>
-                                <span className="bg-gradient-to-r from-amber-100 to-amber-200 text-amber-800 text-xs px-3 py-1 rounded-full font-semibold shadow-sm border border-amber-200">⭐ Popular</span>
-                            </div>
-                            <span className="price text-xl sm:text-2xl font-bold">£5.95</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Pulled Pork In A Toasted Brioche Bun With Salad & Gherkin</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£5.95</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Pulled Pork & Cheese Oven Baked Jacket Potato </h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£7.50</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Pulled Pork & Cheese Oven Baked Jacket Potato</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£7.50</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Pulled Pork On Cheesy Chips</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£7.50</span>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£7.50</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Pulled Pork On A Jumbo Hot Dog With Cheese</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£7.50</span>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£7.50</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Chips/Fries </h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£6.95</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Chips/Fries</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£6.95</span>
                         </div>
-                        <p className="text-gray-600 text-sm Italic">Served In A Baguette</p>
+                        <p className="text-gray-600 text-sm italic">Served In A Baguette</p>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Cheesy Chips</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£4.50</span>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£4.50</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Small Chips/Fries</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£1.95</span>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£1.95</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md min-h-[650px] w-full xl:max-w-md">
+            {/* HOMEMADE CHILLI CON CARNE CARD */}
+            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">HOMEMADE CHILLI CON CARNE</h2>
                 <div className="space-y-6">
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Chilli Con Carne With Boiled Rice </h3>
-                            <span className="price text-lg sm:text-xl font-bold text-right">£7.50</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Chilli Con Carne With Boiled Rice</h3>
+                            <span className="price text-lg sm:text-xl font-bold text-right whitespace-nowrap">£7.50</span>
                         </div>
-                        
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Chilli Con Carne & Cheese Oven Baked Jacket Potato</h3>
-                            <span className="price text-lg sm:text-xl font-bold text-right">£8.50</span>
+                            <span className="price text-lg sm:text-xl font-bold text-right whitespace-nowrap">£8.50</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Chilli Con Carne With Cheesy Chips</h3>
-                            <span className="price text-lg sm:text-xl font-bold text-right">£7.50</span>
+                            <span className="price text-lg sm:text-xl font-bold text-right whitespace-nowrap">£7.50</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Chilli Con Carne With Jumbo Cheese Dog</h3>
-                            <span className="price text-lg sm:text-xl font-bold text-right">£7.50</span>
+                            <span className="price text-lg sm:text-xl font-bold text-right whitespace-nowrap">£7.50</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Chips/Fries </h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£3.25</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Chips/Fries</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£3.25</span>
                         </div>
-                        <p className="text-gray-600 text-sm Italic">Served In A Baguette</p>
+                        <p className="text-gray-600 text-sm italic">Served In A Baguette</p>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Cheesy Chips</h3>
-                            <span className="price text-lg sm:text-xl font-bold text-right">£4.50</span>
+                            <span className="price text-lg sm:text-xl font-bold text-right whitespace-nowrap">£4.50</span>
                         </div>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Small Chips/Fries</h3>
-                            <span className="price text-lg sm:text-xl font-bold text-right">£1.95</span>
-                        </div>  
+                            <span className="price text-lg sm:text-xl font-bold text-right whitespace-nowrap">£1.95</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className="grid grid-cols-1 gap-6 md:gap-8 mb-12">
-            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md min-h-[650px] w-full xl:max-w-md">
-                <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6"><b>MAINS</b></h2>
-                <div className="space-y-6">
-                    <div className="relative group">
-                        <div className="flex justify-between items-center mb-1">
-                            <div className="flex items-center gap-2">
-                                <h3 className="text-xl sm:text-2xl font-semibold">Gammon Ham Carved From The Joint, 2 Fried Eggs & Chips  </h3>
-                                <span className="bg-gradient-to-r from-amber-100 to-amber-200 text-amber-800 text-xs px-3 py-1 rounded-full font-semibold shadow-sm border border-amber-200">⭐ Popular</span>
-                            </div>
-                            <span className="price text-xl sm:text-2xl font-bold">£9.50</span>
-                        </div>
-                    </div>
+
+            {/* REFACTORED MAINS CARD */}
+            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md col-span-1 md:col-span-2">
+                <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">MAINS</h2>
+                {/* Using a grid to create columns inside the card */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-6">
+                    {/* Item 1 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Pulled Pork & Cheese Oven Baked Jacket Potato </h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£7.50</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Gammon Ham, 2 Fried Eggs & Chips</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£9.50</span>
                         </div>
                     </div>
+                    {/* Item 2 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Large Steak & Kidney Pudding With Chips</h3>
-                            <p><b><i>/ OR /</i></b></p>
-                            <h3 className="text-xl sm:text-2xl font-semibold">Mashed Potato</h3>
-                            <p><b><i>/ OR /</i></b></p>
-                            <h3 className="text-xl sm:text-2xl font-semibold">Jacket Potato Baked Beans</h3>
-                            <p><b><i>/ OR /</i></b></p>
-                            <h3 className="text-xl sm:text-2xl font-semibold">Mushrooms & Gravy</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£10.95</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Large Steak & Kidney Pudding</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£10.95</span>
                         </div>
+                        <p className="text-gray-600 text-sm">With Chips/Mashed/Jacket Potato & Beans/Mushrooms/Gravy.</p>
                     </div>
+                    {/* Item 3 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Homemade Meat Pie With Chips</h3>
-                            <p><b><i>/ OR /</i></b></p>
-                            <h3 className="text-xl sm:text-2xl font-semibold">Mashed Potato </h3>
-                            <p><b><i>/ OR /</i></b></p>
-                            <h3 className="text-xl sm:text-2xl font-semibold">Jacket Potato Baked Beans</h3>
-                            <p><b><i>/ OR /</i></b></p>
-                            <h3 className="text-xl sm:text-2xl font-semibold">Mushrooms & Gravy</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£9.95</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Homemade Meat Pie</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£9.95</span>
                         </div>
+                        <p className="text-gray-600 text-sm">With Chips/Mashed/Jacket Potato & Beans/Mushrooms/Gravy.</p>
                     </div>
+                     {/* Item 4 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Homemade Meat Pie With Gravy</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£5.95</span>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£5.95</span>
                         </div>
                     </div>
+                     {/* Item 5 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">3 Pork Sausages, Mashed Potatoes Fried Onions & Gravy</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£8.50</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">3 Sausages, Mashed Potatoes & Gravy</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£8.50</span>
                         </div>
                     </div>
+                     {/* Item 6 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">2 Pork Sausages, Chips & Beans </h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£6.95</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">2 Sausages, Chips & Beans</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£6.95</span>
                         </div>
                     </div>
+                     {/* Item 7 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">2 Fried Eggs & Chips </h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£5.95</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">2 Fried Eggs & Chips</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£5.95</span>
                         </div>
                     </div>
+                     {/* Item 8 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">2 Fried Eggs, Chips & Beans</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£6.50</span>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£6.50</span>
                         </div>
                     </div>
+                     {/* Item 9 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Pork Sausage, Fried Egg & Chips</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£5.95</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Sausage, Fried Egg & Chips</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£5.95</span>
                         </div>
                     </div>
+                     {/* Item 10 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">2 Pork Sausages, 2 Fried Eggs & Chips</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£7.50</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">2 Sausages, 2 Fried Eggs & Chips</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£7.50</span>
                         </div>
                     </div>
+                     {/* Item 11 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Bowl Of Chips Or Curly Fries</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£3.25</span>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£3.25</span>
                         </div>
                     </div>
+                     {/* Item 12 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Cheesy Chips Or Cheesy Curly Fries</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£4.50</span>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£4.50</span>
                         </div>
                     </div>
+                     {/* Item 13 */}
+                     <div>
+                        <div className="flex justify-between items-center mb-1">
+                            <h3 className="text-xl sm:text-2xl font-semibold">Crusty Buttered Roll</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£1.00</span>
+                        </div>
+                    </div>
+                     {/* Item 14 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Extra Slice</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">70p</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Bowl Of Soup With A Roll</h3>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£3.95</span>
                         </div>
                     </div>
-                    <div>
-                        <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Crusty Buttered Roll </h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£1.00</span>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Bowl Of Soup With A Roll Or Bread & Butter</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£3.95</span>
-                        </div>
-                    </div>
-                    <p className="text-sm italic text-gray-500 mt-2">1 Slice Of Bread & Butter With Any Meal Above Available On Request</p>
                 </div>
+                 <p className="text-sm italic text-gray-500 mt-6 pt-4 border-t border-gray-200">1 Slice Of Bread & Butter With Any Meal Above Available On Request</p>
             </div>
-            <div className="bg-white rounded-3xl p-6 sm:p-8 card shadow-md col-span-1 md:col-span-2 xl:col-span-3">
+        </div>
+        
+        <div className="grid grid-cols-1 gap-6 md:gap-8 mb-12">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 card shadow-md">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">3 EGG OMELETTES</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
-                    <div className="flex justify-between items-center border-b sm:border-b-0 sm:border-r sm:pr-4 pb-2 sm:pb-0 border-gray-200">
-                        <h3 className="font-Monferrat font-bold text-grey-600">Omelette</h3>
-                        <span className="price_extras text-x1">£4.50</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+                    <div className="flex justify-between items-center border-b sm:border-0 pb-2 sm:pb-0">
+                        <h3 className="font-semibold text-gray-800">Plain Omelette</h3>
+                        <span className="price_extras font-bold">£4.50</span>
                     </div>
-                    <div className="flex justify-between items-center sm:pl-4">
-                        <h3 className="font-Monferrat font-bold text-gray-600 ">Cheese Omelette With Side Salad, Bread & Butter</h3>
-                        <span className="price_extras text-sm">£6.50</span>
+                    <div className="flex justify-between items-center border-b sm:border-0 pb-2 sm:pb-0">
+                        <h3 className="font-semibold text-gray-800">Cheese Omelette With Side Salad, Bread & Butter</h3>
+                        <span className="price_extras font-bold">£6.50</span>
                     </div>
-                    <div className="flex justify-between items-center border-b sm:border-b-0 sm:border-r sm:pr-4 pb-2 sm:pb-0 border-gray-200">
-                        <h3 className="font-Monferrat font-bold text-gray-600 ">Cheese Omelette With Chips Or Jacket Potato & Side Salad</h3>
-                        <span className="price_extras text-sm">£8.50</span>
-
-                    </div>
-                    <div className="relative group">
-                        <div className="flex justify-between items-center border-b sm:border-b-0 sm:border-r sm:pr-4 pb-2 sm:pb-0 border-gray-200">
-                            <div className="flex items-center gap-2">
-                                <h3 className="font-Monferrat font-bold text-gray-600">Full English</h3>
-                            </div>
-                            <span className="price_extras text-sm">£6.95</span>
-                        </div>
-                        <p className="text-gray-600 text-sm">See "Fresh Salads" Section</p>
+                    <div className="flex justify-between items-center col-span-full">
+                        <h3 className="font-semibold text-gray-800">Cheese Omelette With Chips Or Jacket Potato & Side Salad</h3>
+                        <span className="price_extras font-bold">£8.50</span>
                     </div>
                 </div>
-                <p className="text-sm italic text-gray-500 mt-2">CHEESE & HAM OR CHEESE & MUSHROOM OMELETTE ALSO AVAILABLE</p>
-                <p className="text-sm italic text-gray-500 mt-2">Due to kitchen restrictions omelettes without cheese can only be served plain and folded with your chosen filling</p>
+                <p className="text-sm italic text-gray-500 mt-4 pt-4 border-t border-gray-200">
+                    CHEESE & HAM or CHEESE & MUSHROOM OMELETTE also available.
+                    <br/>
+                    Due to kitchen restrictions omelettes without cheese can only be served plain and folded with your chosen filling.
+                </p>
             </div>
         </div>
     </main>

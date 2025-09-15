@@ -24,9 +24,10 @@ function BakeryPage() {
             </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 mb-12">
-            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md min-h-[650px] w-full xl:max-w-md">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
+            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">TOASTIES & PANINI'S</h2>
+                <p className="text-gray-500 mb-4 italic text-sm"><br></br></p>
                 <div className="space-y-6">
                     <div className="relative group">
                         <div className="flex justify-between items-center mb-1">
@@ -47,8 +48,9 @@ function BakeryPage() {
                         <div className="flex justify-between items-center mb-1">
                             <div className="flex items-center gap-2">
                                 <h3 className="text-xl sm:text-2xl font-semibold">Cheese & Tuna Mayo  </h3>
-                                <span className="price text-xl sm:text-2xl font-bold">£6.95</span>
                             </div>
+                            {/* Цена теперь является вторым дочерним элементом для flex-контейнера */}
+                            <span className="price text-xl sm:text-2xl font-bold">£6.95</span>
                         </div>
                     </div>
                     <div>
@@ -85,7 +87,7 @@ function BakeryPage() {
                 </div>
             </div>
 
-            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md min-h-[650px] w-full xl:max-w-md">
+            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">OVEN BAKED JACKETS</h2>
                 <p className="text-gray-500 mb-4 italic text-sm">Available From 11 am - With Salad Garnish</p>
                 <div className="space-y-6">
@@ -154,7 +156,7 @@ function BakeryPage() {
                 </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-6 sm:p-8 card shadow-md col-span-1 md:col-span-2 xl:col-span-3">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 card shadow-md col-span-1 md:col-span-2">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">FRESH SALADS</h2>
                 <p className="text-gray-500 mb-4 italic text-sm">Lettuce, Tomato, Cucumber, Onion, Sweetcorn, Boiled Egg, Homemade Coleslaw, Grated Cheese, Beetroot & Mixed Peppers. </p>
                 <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
@@ -197,9 +199,11 @@ function BakeryPage() {
                     <p className="text-sm italic text-gray-500 mt-2">1 Slice Of Bread & Butter With All Salads On Request.</p>
                 </div>
             </div>
+        </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 mb-12">
-            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md min-h-[650px] w-full xl:max-w-md">
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
+            <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md min-h-[650px]">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">SANDWICHES</h2>
                 <p className="text-gray-500 mb-4 italic text-sm">White Or Wholemeal Bread</p>
                 <div className="space-y-6">
@@ -314,7 +318,7 @@ function BakeryPage() {
                 <p className="text-sm italic text-gray-500 mt-2"><b>EXTRA FILLINGS £1.00 EACH</b></p>
             </div>
         </div>   
-    </div>
+    
     </main>
     <a href="https://just-eat.co.uk/restaurants-the-corner-house-southend-on-sea/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" 
         target="_blank" 
@@ -334,4 +338,4 @@ function BakeryPage() {
   );
 }
 
-export default BakeryPage();
+export default BakeryPage;
