@@ -3,29 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const styles = {
   dropdownStyles: `
-    /* ... other styles ... */
-    @media (min-width: 769px) {
-      .dropdown-content {
-        display: none;
-        background: #85725B;
-        position: absolute;
-        border-radius: 20px;
-        overflow: hidden;
-        padding: 10px 15px;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown-content a {
-        padding: 10px 20px;
-        text-align: left; /* Change this to left */
-      }
-    }
-
-    /* ... other mobile styles ... */
-
+    /* ... all your other styles are fine ... */
 
     /* Убираем старый стиль со стрелкой */
     .dropbtn::after {
@@ -40,34 +18,7 @@ const styles = {
       margin-left: 8px;
     }
 
-    /* Поворот стрелки для dropbtn */
-    .dropdown:hover .dropbtn::after,
-    .dropdown.open .dropbtn::after {
-      transform: rotate(180deg);
-    }
-
-    /* Добавляем подчеркивание для dropbtn как у других ссылок */
-    .dropbtn::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 45%;
-      width: 0;
-      height: 2px;
-      background: #f4e6d1;
-      transition: all 0.3s ease;
-      transform: translateX(-50%);
-    }
-
-    .dropdown:hover .dropbtn::before {
-      width: 80%;
-    }
-
-    .dropdown:hover .dropbtn {
-      color: #f4e6d1;
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-2px);
-    }
+    /* ... other styles ... */
 
     @media (min-width: 769px) {
       .dropdown-content {
@@ -88,77 +39,7 @@ const styles = {
       }
     }
 
-    @media (max-width: 768px) {
-      .dropdown.mobile {
-        background: none;
-        padding: 10px 15px;
-      }
-      
-      .dropdown.mobile .dropbtn {
-        background: none;
-        text-align: left;
-        display: inline-flex;
-        width: auto;
-      }
-
-      /* Стрелка в мобильной версии - вниз по умолчанию */
-      .dropdown.mobile .dropbtn::after {
-        transform: rotate(0deg);
-      }
-
-      /* Стрелка в мобильной версии - вверх при открытии */
-      .dropdown.mobile.open .dropbtn::after {
-        transform: rotate(180deg);
-      }
-      
-      .dropdown.mobile.open {
-        background: #8b7355;
-        width: 100%;
-        border-radius: 10px;
-        text-align: left;
-      }
-      
-      .dropdown.mobile.open .dropbtn {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: left;
-      }
-      
-      .dropdown.mobile .dropdown-content {
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        pointer-events: none;
-        margin: 0;
-        padding: 0;
-        max-height: 0;
-      }
-      
-      .dropdown.mobile.open .dropdown-content {
-        position: static;
-        visibility: visible;
-        opacity: 1;
-        height: auto;
-        pointer-events: auto;
-        background: #85725B;
-        display: block;
-        max-height: none;
-      }
-
-      .dropdown.mobile.open .dropdown-content a {
-        display: block;
-        padding: 10px 20px;
-        text-align: left;
-        transition: background-color 0.3s;
-      }
-
-      .dropdown.mobile.open .dropdown-content a:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-    }
+    /* THE ENTIRE @media (max-width: 768px) BLOCK HAS BEEN DELETED FROM HERE */
   `
 };
 

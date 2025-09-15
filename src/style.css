@@ -189,11 +189,11 @@ nav {
 }
 
 
-/* Поворот стрелки */
-.dropdown:hover .arrow::after,
-.dropdown.open .arrow::after {
-    transform: rotate(180deg);
-}
+/* Поворот стрелки для dropbtn */
+    .dropdown:hover .dropbtn::after,
+    .dropdown.open .dropbtn::after {
+      transform: rotate(180deg);
+    }
 
 
 .dropdown-content {
@@ -844,7 +844,7 @@ footer {
     text-align: left;
     display: inline-flex;
     width: auto;
-    padding: 0;
+    /* padding: 0; */
     }
     
     .dropdown.mobile.open {
@@ -895,36 +895,53 @@ footer {
     .dropdown.mobile.open .dropdown-content a:hover {
     background-color: rgba(0, 0, 0, 0.1);
     }
-}    
-@keyframes shine {
-            from {
-                background-position: 0% center;
-            }
-            to {
-                background-position: 200% center;
-            }
-        }
-        #floatingOrderBtn span {
-            color: white;
-            background: none;
-        }
-        #floatingOrderBtn:hover span {
-            background: linear-gradient(90deg, white 0%, #ffd700 25%, white 50%, #ffd700 75%, white 100%);
-            background-size: 200% auto;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            -webkit-text-fill-color: transparent;
-            animation: shine 2s linear infinite;
-        }
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .gallery-grid {
-        columns: 2;
-    }
+    .nav-links .dropdown.mobile {
+  /* This ensures the <li> container itself has no extra styling */
+  padding: 0;
+  width: 100%;
+  display: block;
 }
 
-@media (max-width: 768px) {
+.nav-links .dropdown.mobile .dropbtn {
+  /* This makes the "Menu" button look EXACTLY like the other <a> links */
+  display: flex;
+  width: 100%;
+  padding: 0px 15px; 
+  justify-content: flex-start; /* Aligns content to the left */
+  align-items: center;
+}
+
+.nav-links .dropdown.mobile .dropbtn::after {
+  /* This ensures the arrow rotates correctly on open/close */
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-out;
+}
+
+.nav-links .dropdown.mobile.open .dropbtn::after {
+  transform: rotate(180deg);
+}
+
+.nav-links .dropdown.mobile .dropdown-content {
+  /* This handles the smooth opening/closing animation */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.nav-links .dropdown.mobile.open .dropdown-content {
+  /* This sets the height automatically based on content when open */
+  max-height: 500px; /* Adjust if you have many menu items */
+}
+
+.nav-links .dropdown.mobile .dropdown-content a {
+  padding: 12px 20px;
+  text-align: left; /* Ensures sub-menu items are left-aligned */
+}
+
     .hamburger {
         display: flex;
         z-index: 101;
@@ -1008,7 +1025,37 @@ footer {
     .gallery-grid {
         columns: 2;
     }
+
+}    
+@keyframes shine {
+            from {
+                background-position: 0% center;
+            }
+            to {
+                background-position: 200% center;
+            }
+        }
+        #floatingOrderBtn span {
+            color: white;
+            background: none;
+        }
+        #floatingOrderBtn:hover span {
+            background: linear-gradient(90deg, white 0%, #ffd700 25%, white 50%, #ffd700 75%, white 100%);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            animation: shine 2s linear infinite;
+        }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gallery-grid {
+        columns: 2;
+    }
 }
+
+
 
 @media (max-width: 480px) {
     .logo {
