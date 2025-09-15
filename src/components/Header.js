@@ -3,17 +3,29 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const styles = {
   dropdownStyles: `
-    .dropbtn {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 0;
-      background: none;
-      color: inherit;
-      border: none;
-      font: inherit;
-      cursor: pointer;
+    /* ... other styles ... */
+    @media (min-width: 769px) {
+      .dropdown-content {
+        display: none;
+        background: #85725B;
+        position: absolute;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 10px 15px;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        padding: 10px 20px;
+        text-align: left; /* Change this to left */
+      }
     }
+
+    /* ... other mobile styles ... */
+
 
     /* Убираем старый стиль со стрелкой */
     .dropbtn::after {
@@ -39,7 +51,7 @@ const styles = {
       content: '';
       position: absolute;
       bottom: 0;
-      left: 50%;
+      left: 45%;
       width: 0;
       height: 2px;
       background: #f4e6d1;
@@ -72,13 +84,14 @@ const styles = {
 
       .dropdown-content a {
         padding: 10px 20px;
-        text-align: center;
+        text-align: left;
       }
     }
 
     @media (max-width: 768px) {
       .dropdown.mobile {
         background: none;
+        padding: 10px 15px;
       }
       
       .dropdown.mobile .dropbtn {
@@ -86,7 +99,6 @@ const styles = {
         text-align: left;
         display: inline-flex;
         width: auto;
-        padding: 0;
       }
 
       /* Стрелка в мобильной версии - вниз по умолчанию */
@@ -103,14 +115,14 @@ const styles = {
         background: #8b7355;
         width: 100%;
         border-radius: 10px;
+        text-align: left;
       }
       
       .dropdown.mobile.open .dropbtn {
         width: 100%;
         text-align: center;
-        padding: 10px;
         display: flex;
-        justify-content: center;
+        justify-content: left;
       }
       
       .dropdown.mobile .dropdown-content {
@@ -138,8 +150,8 @@ const styles = {
 
       .dropdown.mobile.open .dropdown-content a {
         display: block;
-        padding: 10px 0;
-        text-align: center;
+        padding: 10px 20px;
+        text-align: left;
         transition: background-color 0.3s;
       }
 
