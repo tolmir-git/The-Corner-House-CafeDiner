@@ -11,7 +11,7 @@ function BurgersPage() {
     <main className="container mx-auto px-4 sm:px-6 py-12">
         <div className="text-center mb-12">
             <h1 className="section-title text-4xl sm:text-5xl font-bold mb-4">Burgers</h1>
-            <p className="text-lg sm:text-xl text-gray-600">put a small description to the page.</p>
+            <p className="text-lg sm:text-xl text-gray-600">Handcrafted and delicious, our juicy burgers are made with quality ingredients and served with a smile.</p>
             <div className="flex justify-center gap-4 mt-4">
                 <span className="inline-flex items-center gap-1">
                     <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
