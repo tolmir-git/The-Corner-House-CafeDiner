@@ -23,7 +23,7 @@ function HomePage() {
       <section className="hero" id="home">
         <div className="container">
           <div className="hero-content">
-            <h1>Welcome to The Corner House</h1>
+            <h1 className="logo">Welcome to The Corner House</h1>
             <p>A family-run cafe serving delicious breakfast and comfort food in the heart of Southend-on-Sea for over 22 years</p>
             <button className="cta-button" onClick={openMenu}>View Our Menu</button>
           </div>
