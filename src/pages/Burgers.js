@@ -80,7 +80,7 @@ function BurgersPage() {
                 <div className="space-y-6">
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Chicken Burger </h3>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Chicken Burger</h3>
                             <span className="price text-lg sm:text-xl font-bold text-right">£5.50</span>
                         </div>
                         

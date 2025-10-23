@@ -56,7 +56,7 @@ function MainsPage() {
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Chips/Fries</h3>
-                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£6.95</span>
+                            <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£3.25</span>
                         </div>
                         <p className="text-gray-600 text-sm italic">Served In A Baguette</p>
                     </div>
@@ -191,7 +191,7 @@ function MainsPage() {
                      {/* Item 9 */}
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Sausage, Fried Egg & Chips</h3>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Pork Sausage, Fried Egg & Chips</h3>
                             <span className="price text-xl sm:text-2xl font-bold text-right whitespace-nowrap">£5.95</span>
                         </div>
                     </div>
@@ -250,6 +250,10 @@ function MainsPage() {
                     <div className="flex justify-between items-center col-span-full">
                         <h3 className="font-semibold text-gray-800">Cheese Omelette With Chips Or Jacket Potato & Side Salad</h3>
                         <span className="price_extras font-bold">£8.50</span>
+                    </div>
+                    <div className="flex justify-between items-center col-span-full">
+                        <h3 className="font-semibold text-gray-800">Cheese Omelette Salad (See "Fresh Salads" Section)</h3>
+                        <span className="price_extras font-bold">£9.50</span>
                     </div>
                 </div>
                 <p className="text-sm italic text-gray-500 mt-4 pt-4 border-t border-gray-200">

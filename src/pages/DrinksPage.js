@@ -24,7 +24,7 @@ function DrinksPage() {
                             <h3 className="text-xl sm:text-2xl font-semibold">Tea</h3>
                             <span className="price text-xl sm:text-2xl font-bold">£2.00</span>
                         </div>
-                        <p className="text-gray-600 text-sm">Pot or Mug of Tea. Pot for Two £3.90. Decaf Available.</p>
+                        <p className="text-gray-600 text-sm">Pot or Mug of Tea. Pot for Two £3.90. Decaf Available and herbal tea available £2.25.</p>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">

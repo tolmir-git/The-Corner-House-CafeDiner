@@ -34,7 +34,7 @@ function BreakfastPage() {
                                 <h3 className="text-xl sm:text-2xl font-semibold">Full English</h3>
                                 <span className="bg-gradient-to-r from-amber-100 to-amber-200 text-amber-800 text-xs px-3 py-1 rounded-full font-semibold shadow-sm border border-amber-200">⭐ Popular</span>
                             </div>
-                            <span className="price text-xl sm:text-2xl font-bold">£6.95</span>
+                            <span className="price text-xl sm:text-2xl font-bold">£8.50</span>
                         </div>
                         <p className="text-gray-600 text-sm">2 Sausages, 2 Bacon, 2 Fried Eggs, Baked Beans & Toast.</p>
                     </div>
@@ -51,7 +51,7 @@ function BreakfastPage() {
                                 <h3 className="text-xl sm:text-2xl font-semibold">Vegetarian</h3>
                                 <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             </div>
-                            <span className="price text-xl sm:text-2xl font-bold">£6.95</span>
+                            <span className="price text-xl sm:text-2xl font-bold">£8.50</span>
                         </div>
                         <p className="text-gray-600 text-sm">2 Hash Browns, 2 Fried Eggs, Mushrooms, Grilled Tomatoes, Baked Beans & Toast.<br></br><span>Add 2 Veggie Sausages for £1.00.</span></p>
                     </div>
@@ -77,7 +77,7 @@ function BreakfastPage() {
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Corner House Special</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£6.95</span>
+                            <span className="price text-xl sm:text-2xl font-bold">£9.50</span>
                         </div>
                         <p className="text-gray-600 text-sm">2 Sausages, 2 Bacon, 2 Fried Eggs, 2 Hash Browns, Baked Beans & Toast.</p>
                     </div>
@@ -155,10 +155,10 @@ function BreakfastPage() {
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Breakfast Yorkshire</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£9.50</span>
+                            <h3 className="text-xl sm:text-2xl font-semibold">Pancakes With Syrup</h3>
+                            <span className="price text-xl sm:text-2xl font-bold">£4.95</span>
                         </div>
-                        <p className="text-gray-600 text-sm">2 Bacon, Pork Sausage, Mushrooms, Grilled Tomato, Beans & Fried Egg On Top.</p>
+                        <p className="text-gray-600 text-sm">4 Pancakes with Maple Syrup & Butter.</p>
                     </div>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mt-8 mb-6">Muffins & On Toast</h2>
@@ -169,6 +169,20 @@ function BreakfastPage() {
                             <span className="price text-xl sm:text-2xl font-bold">£3.25</span>
                         </div>
                         <p className="text-gray-600 text-sm">Served with Burger Cheese.</p>
+                    </div>
+                    <div>
+                        <div className="flex justify-between items-center mb-1">
+                            <h3 className="text-xl sm:text-2xl font-semibold">Double Sausage Patty</h3>
+                            <span className="price text-xl sm:text-2xl font-bold">£4.25</span>
+                        </div>
+                        <p className="text-gray-600 text-sm">A breakfast muffin served with burger cheese.</p>
+                    </div>
+                    <div>
+                        <div className="flex justify-between items-center mb-1">
+                            <h3 className="text-xl sm:text-2xl font-semibold">Sausage Patty & Egg</h3>
+                            <span className="price text-xl sm:text-2xl font-bold">£4.25</span>
+                        </div>
+                        <p className="text-gray-600 text-sm">A breakfast muffin served with burger cheese.</p>
                     </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">

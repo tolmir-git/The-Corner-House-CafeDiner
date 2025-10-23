@@ -325,7 +325,8 @@ function BakeryPage() {
                         </div>
                     </div>
                 </div>
-                <p className="text-sm italic text-gray-500 mt-2"><b>EXTRA FILLINGS £1.00 EACH</b></p>
+                
+                <p className="text-sm italic text-gray-500 mt-2"><b>Extras</b> Cheese Slice 50p, Add Salad 50p, Coleslaw 50p, Single Salad Items/Sweet Pickle 25p</p>
             </div>
         </div>   
     

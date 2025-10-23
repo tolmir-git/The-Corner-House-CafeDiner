@@ -41,22 +41,12 @@ function DessertPage() {
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <div className="flex items-center gap-2">
-                                <h3 className="text-xl sm:text-2xl font-semibold">Banana Pancakes</h3>
-                                <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
-                            </div>
-                            <span className="price text-xl sm:text-2xl font-bold">£5.95</span>
-                        </div>
-                        <p className="text-gray-600 text-sm">3 Pancakes with Fresh Banana, Chocolate Sauce & Ice Cream.</p>
-                    </div>
-                    <div>
-                        <div className="flex justify-between items-center mb-1">
-                            <div className="flex items-center gap-2">
-                                <h3 className="text-xl sm:text-2xl font-semibold">Pancakes with Syrup</h3>
+                                <h3 className="text-xl sm:text-2xl font-semibold">Vanilla Pancakes</h3>
                                 <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">V</span>
                             </div>
                             <span className="price text-xl sm:text-2xl font-bold">£4.95</span>
                         </div>
-                        <p className="text-gray-600 text-sm">3 Pancakes with Vanilla Ice Cream & Maple Syrup.</p>
+                        <p className="text-gray-600 text-sm">3 Pancakes with Vanilla Ice Cream & Marple Syrup Or Chocolate Sauce.</p>
                     </div>
                 </div>
             </div>
@@ -64,13 +54,6 @@ function DessertPage() {
             <div className="bg-pattern rounded-3xl p-6 sm:p-8 card shadow-md">
                 <h2 className="text-2xl sm:text-3xl font-bold section-title mb-6">Pies & Cakes</h2>
                 <div className="space-y-6">
-                    <div>
-                        <div className="flex justify-between items-center mb-1">
-                            <h3 className="text-xl sm:text-2xl font-semibold">Banana Split</h3>
-                            <span className="price text-xl sm:text-2xl font-bold">£4.50</span>
-                        </div>
-                        <p className="text-gray-600 text-sm">A classic dessert perfect for sharing.</p>
-                    </div>
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <h3 className="text-xl sm:text-2xl font-semibold">Apple Pie</h3>
