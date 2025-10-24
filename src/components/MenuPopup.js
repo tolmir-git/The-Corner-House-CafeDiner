@@ -39,7 +39,7 @@ function MenuPopup({ onClose }) {
             style={{ cursor: isBreakfastZoomed ? 'zoom-out' : 'zoom-in' }}
           >
             <img
-              src="/images/menu-breakfast.jpg"
+              src="/images/new_menu_2.jpg"
               alt="The Corner House Breakfast Menu"
               className={isBreakfastZoomed ? 'zoomed' : ''}
             />
@@ -50,7 +50,7 @@ function MenuPopup({ onClose }) {
             style={{ cursor: isMainsZoomed ? 'zoom-out' : 'zoom-in' }}
           >
             <img
-              src="/images/menu-main.jpg"
+              src="/images/new_men.jpg"
               alt="The Corner House Main Menu"
               className={isMainsZoomed ? 'zoomed' : ''}
             />
