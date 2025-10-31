@@ -83,7 +83,7 @@ function HomePage() {
           <h2>Taste the Difference</h2>
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img src="/images/pancake37.jpg" alt="Pancakes with bacon and syrup" />
+              <img src="/images/pancakes37.jpg" alt="Pancakes with bacon and syrup" />
             </div>
             <div className="gallery-item">
               <img src="/images/full.png" alt="Another full English breakfast" />
@@ -98,7 +98,7 @@ function HomePage() {
               <img src="/images/milkshake2.jpg" alt="A tasty milkshake" />
             </div>
             <div className="gallery-item">
-              <img src="/images/cappuccino.jpg" alt="Fresh cappuccino" />
+              <img src="/images/cappuccinno.jpg" alt="Fresh cappuccinno" />
             </div>
             <div className="gallery-item">
               <img src="/images/toastie100.jpg" alt="Toasted sandwich" />
@@ -107,7 +107,7 @@ function HomePage() {
               <img src="/images/perfectmuffin12.jpg" alt="muffin" />
             </div>
             <div className="gallery-item">
-              <img src="/images/sausageechips87.jpg" alt="Sausage and chips" />
+              <img src="/images/sausageeggchips87.jpg" alt="Sausage, egg and chips" />
             </div>
             <div className="gallery-item">
               <img src="/images/perfectbreakfast5.jpg" alt="Perfect breakfast" />
