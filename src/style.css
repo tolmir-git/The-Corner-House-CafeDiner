@@ -63,7 +63,7 @@ nav {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     animation: logoGlow 2s ease-in-out infinite alternate;
 }
-.logo_lower {
+.lower {
     font-size: 4rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
