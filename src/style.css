@@ -58,6 +58,12 @@ nav {
 }
 
 .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: logoGlow 2s ease-in-out infinite alternate;
+}
+.logo_lower {
     font-size: 4rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -294,7 +300,7 @@ nav {
 }
 
 .hero-content p {
-    font-size:32px;
+    font-size:20px;
     margin-bottom: 2rem;
     max-width: 700px;
     margin-left: auto;
