@@ -35,9 +35,9 @@ function HomePage() {
           <div className="about-content">
             <div className="about-text">
               <h2>Our Story</h2>
-              <p>The Corner House Cafe has been a beloved independent, family-run establishment in Southend-on-Sea for over two decades. Since opening our doors, we've been committed to serving hearty, homemade meals in a warm and welcoming atmosphere.</p>
-              <p>We pride ourselves on our extensive breakfast menu, featuring traditional full English breakfasts alongside creative options like homemade Yorkshire puddings with breakfast fillings, fluffy pancakes, and freshly baked muffins.</p>
-              <p>Whether you're starting your day with us or stopping by for lunch, our friendly team is here to make your visit memorable with quality food and genuine hospitality.</p>
+              <p>The corner house is a family owned independent cafe which opened in 2001.We have a large menu which consists mostly of traditional British food such as gammon ham with eggs & chips, steak & kidney pudding, sausage & mash, oven baked jacket potatoes, omelettes and much more including our large breakfast menu.</p>
+              <p>We also have homemade options which include various meat pies, beef burgers and veggie burgers, pulled pork, chilli con carne and cakes. </p>
+              <p>A kids menu is also available and we are licensed to serve alcohol.</p>
             </div>
             <div className="about-image">
               <img src="/images/main2.png" alt="Cozy cafe interior with people" />
@@ -55,7 +55,7 @@ function HomePage() {
               <div className="menu-card-content">
                 <h3>Full English Breakfast</h3>
                 <p>Two sausages, two rashers of bacon, fried egg, beans, tomatoes, mushrooms, and your choice of bread with tea or coffee included.</p>
-                <div className="price">£9.95</div>
+                <div className="price">£8.50</div>
               </div>
             </div>
             <div className="menu-card">
@@ -71,7 +71,7 @@ function HomePage() {
               <div className="menu-card-content">
                 <h3>Homemade Cakes</h3>
                 <p>Nice Homemade Cakes freshly baked each-day-different: cheesecakes, chocolate, carrot for the best taste to your coffee.</p>
-                <div className="price">From £8.50</div>
+                <div className="price">from £2.95</div>
               </div>
             </div>
           </div>
