@@ -83,7 +83,7 @@ function HomePage() {
           <h2>Taste the Difference</h2>
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Pancakes with syrup" />
+              <img src="/images/pancake37.jpg" alt="Pancakes with bacon and syrup" />
             </div>
             <div className="gallery-item">
               <img src="/images/full.png" alt="Another full English breakfast" />
@@ -98,13 +98,19 @@ function HomePage() {
               <img src="/images/milkshake2.jpg" alt="A tasty milkshake" />
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Fresh salad" />
+              <img src="/images/cappuccino.jpg" alt="Fresh cappuccino" />
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Toasted sandwich" />
+              <img src="/images/toastie100.jpg" alt="Toasted sandwich" />
             </div>
             <div className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Milkshake" />
+              <img src="/images/perfectmuffin12.jpg" alt="muffin" />
+            </div>
+            <div className="gallery-item">
+              <img src="/images/sausageechips87.jpg" alt="Sausage and chips" />
+            </div>
+            <div className="gallery-item">
+              <img src="/images/perfectbreakfast5.jpg" alt="Perfect breakfast" />
             </div>
           </div>
         </div>
