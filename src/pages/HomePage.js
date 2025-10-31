@@ -51,7 +51,7 @@ function HomePage() {
           <h2>Our Specialties</h2>
           <div className="menu-grid">
             <div className="menu-card">
-              <img src="/images/full.png" alt="Full English Breakfast" />
+              <img src="/images/perfectbreakfast5.jpg" alt="Full English Breakfast" />
               <div className="menu-card-content">
                 <h3>Full English Breakfast</h3>
                 <p>Two sausages, two rashers of bacon, fried egg, beans, tomatoes, mushrooms, and your choice of bread with tea or coffee included.</p>
