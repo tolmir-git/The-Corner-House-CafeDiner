@@ -98,7 +98,7 @@ function HomePage() {
               <img src="/images/milkshake2.jpg" alt="A tasty milkshake" />
             </div>
             <div className="gallery-item">
-              <img src="/images/cappuccinno.jpg" alt="Fresh cappuccinno" />
+              <img src="/images/cappuccino.jpg" alt="Fresh cappuccino" />
             </div>
             <div className="gallery-item">
               <img src="/images/toastie100.jpg" alt="Toasted sandwich" />
@@ -108,9 +108,6 @@ function HomePage() {
             </div>
             <div className="gallery-item">
               <img src="/images/sausageeggchips87.jpg" alt="Sausage, egg and chips" />
-            </div>
-            <div className="gallery-item">
-              <img src="/images/perfectbreakfast5.jpg" alt="Perfect breakfast" />
             </div>
           </div>
         </div>
