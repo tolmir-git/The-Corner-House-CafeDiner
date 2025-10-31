@@ -95,7 +95,7 @@ function HomePage() {
               <img src="/images/chocolate.jpg" alt="Coffee with latte art" />
             </div>
             <div className="gallery-item">
-              <img src="/images/milkshake2.jpg" alt="A tasty milkshake" />
+              <img src="/images/milkshake.jpg" alt="A tasty milkshake" />
             </div>
             <div className="gallery-item">
               <img src="/images/cappuccino.jpg" alt="Fresh cappuccino" />
